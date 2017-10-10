@@ -1,0 +1,23 @@
+{
+  "name": "HSStip-Student-gegevens",
+  "version": "1.0.0",
+  "description": "Microservice student information",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MitchvanWijngaarden/HSStip-Student-gegevens.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MitchvanWijngaarden/HSStip-Student-gegevens/issues"
+  },
+  "homepage": "https://github.com/MitchvanWijngaarden/HSStip-Student-gegevens#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}

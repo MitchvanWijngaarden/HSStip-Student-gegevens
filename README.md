@@ -1,2 +1,2 @@
-# HSStip-Student-gegevens
+# HSStip-Student-gegevens-API
 Microservice student information
