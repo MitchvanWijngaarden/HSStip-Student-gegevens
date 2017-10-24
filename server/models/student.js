@@ -19,17 +19,13 @@ module.exports = function(sequelize, Sequelize) {
 
         email: {
             type: Sequelize.STRING,
-            notEmpty: true
+            notEmpty: true,
+            primaryKey: true
         },
 
-        telefoonnummer: {
+        mobielnummer: {
             type: Sequelize.STRING,
             notEmpty: true
-        },
-
-        gebruikersnaam: {
-            primaryKey: true,
-            type: Sequelize.STRING
         },
 
         wachtwoord: {

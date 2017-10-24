@@ -11,6 +11,15 @@ models.sequelize.sync().then(function () {
 
 app.use(bodyParser.json());
 
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    res.header("Access-Control-Expose-Headers", "x-auth");
+    res.header("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, DELETE");
+    res.header("Access-Control-Allow-Headers",  "x-auth");
+    next();
+});
+
 app.get('/bedrijven', (req, res) => {
     models.bedrijven.findAll({
         raw: true,
@@ -24,10 +33,10 @@ app.get('/bedrijven', (req, res) => {
     });
 });
 
-app.get('/student/:gebruikersnaam', (req, res) => {
+app.get('/student/:email', (req, res) => {
     models.studenten.find({
         where: {
-            gebruikersnaam: req.params.gebruikersnaam
+            email: req.params.email
         },
         raw: true,
         attributes: {
