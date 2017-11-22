@@ -1,9 +1,0 @@
-{
-  "development": {
-    "username": "vedadnd183_hsstip",
-    "password": "hsstip2017",
-    "database": "vedadnd183_hsstip",
-    "host": "vedex.nl",
-    "dialect": "mysql"
-  }
-}

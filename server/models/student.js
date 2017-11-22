@@ -1,45 +1,45 @@
-module.exports = function(sequelize, Sequelize) {
+module.exports = function(sequelize, DataTypes) {
 
-    return sequelize.define('studenten', {
+    return sequelize.define('student', {
 
         voornaam: {
-            type: Sequelize.STRING,
+            type: DataTypes.STRING,
             notEmpty: true
         },
 
         tussenvoegsel: {
-            type: Sequelize.STRING,
+            type: DataTypes.STRING,
             notEmpty: true
         },
 
         achternaam: {
-            type: Sequelize.STRING,
+            type: DataTypes.STRING,
             notEmpty: true
         },
 
         email: {
-            type: Sequelize.STRING,
+            type: DataTypes.STRING,
             notEmpty: true,
             primaryKey: true
         },
 
         mobielnummer: {
-            type: Sequelize.STRING,
+            type: DataTypes.STRING,
             notEmpty: true
         },
 
         wachtwoord: {
-            type: Sequelize.STRING,
+            type: DataTypes.STRING,
             notEmpty: true
         },
 
         studierichting: {
-            type: Sequelize.STRING,
+            type: DataTypes.STRING,
             notEmpty: true
         },
 
         mentor: {
-            type: Sequelize.STRING,
+            type: DataTypes.STRING,
             notEmpty: true
         }
     }, {
